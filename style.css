@@ -1,0 +1,175 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#header-text {
+    font-weight: 700;
+    font-size: 130px;
+    padding-top: 20px;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#header-img {
+    width: 450px;
+    height: 250px;
+    margin-top: 200px;
+
+}
+
+#about-us-img {
+    width: 552px;
+    height: 450px;
+}
+
+#right-about-us {
+    padding-left: 100px;
+}
+
+.about-us {
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.slider {
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: inline-block;
+    ;
+}
+
+
+.line {
+    align-items: center;
+    width: 90%;
+    height: 10px;
+    border-width: 2;
+    color: black !important;
+    background-color: black !important;
+}
+
+input {
+    width: 50% !important;
+    display: flex;
+    justify-items: center !important;
+}
+
+.button {
+    width: 15% !important;
+    margin-left: 372px;
+}
+
+.sticky {
+    top: 0;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+.bg {
+    background-color: black;
+}
+
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 10px;
+}
+
+.card {
+    flex: 0 0 auto;
+    padding: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.mobile-view-body {
+    padding-left: 20px;
+}
+
+.arrow {
+    /* Arrow 1 */
+    height: 40px;
+    margin-bottom: 50px;
+    border-radius: 180px;
+}
+
+#message {
+    opacity: 0;
+}
+
+#our-services {
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+@media screen and (max-width:768px) {
+    .mobile-view-header-btn {
+        margin-right: 10px;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    #header-text {
+        font-weight: 500;
+        font-size: 60px;
+    }
+
+    #header-img {
+        width: 300px;
+        height: 150px;
+        margin-top: -40px;
+        padding-right: 35px;
+    }
+
+    #about-us-img {
+        width: 300px;
+        height: 250px;
+
+    }
+
+    .mobile-view-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    #right-about-us {
+        padding-left: 0px !important;
+    }
+
+    .button {
+        width: 30% !important;
+        margin-left: 100px;
+    }
+
+    .mobile-view-body {
+        padding-left: 15px;
+    }
+}
